@@ -17,7 +17,7 @@ export default function InteractiveGridHero() {
     'Deep Learning & Machine Learning Engineer'
   ];
 
-  // 🔧 Grid setup
+  // Grid kotak-kotak setup bayy
   useEffect(() => {
     const updateGrid = () => {
       const cellSize = 55;
@@ -33,7 +33,7 @@ export default function InteractiveGridHero() {
     return () => window.removeEventListener('resize', updateGrid);
   }, []);
 
-  // ✨ Typing animation
+  // typing animation untuk bidang / role yang gueh tekuni bayy
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];
     let timer;
@@ -64,7 +64,7 @@ export default function InteractiveGridHero() {
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, currentRoleIndex]);
 
-  // 💥 Interaksi klik cell (ripple effect)
+  // efek riple atau efek gelombang pada background grid bayyy
   const handleCellClick = (index) => {
     const { cols } = gridSize;
     const clickedRow = Math.floor(index / cols);
@@ -117,9 +117,9 @@ export default function InteractiveGridHero() {
         }
       `}</style>
 
-      {/* 🎯 Hero Section */}
+      {/* sung ajah */}
       <div className="relative h-screen" style={{ animation: 'fadeIn 0.8s ease-in' }}>
-        {/* Background Grid */}
+        {/* Background Grid nya bayyy */}
         <div
           className="grid gap-px bg-black w-full h-screen overflow-hidden relative"
           style={{
@@ -144,16 +144,16 @@ export default function InteractiveGridHero() {
             />
           ))}
 
-          {/* 🔥 Gradient Overlay */}
+          {/*  Gradient Overlay bayy  */}
           <div className="pointer-events-none absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black via-10% to-transparent z-20"></div>
           <div className="pointer-events-none absolute bottom-0 left-0 w-full h-52 bg-gradient-to-t from-black via-10% to-transparent z-20"></div>
         </div>
 
-        {/* Overlay Content */}
+        {/* Overlay Content bayy */}
         <div className="absolute inset-0 flex items-center pointer-events-none z-30">
           <div className="w-full max-w-7xl mx-auto px-8 md:px-12 lg:px-50">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-1">
-              {/* ✍️ Text Section */}
+              {/* sapaan buat viewer gueh bayy  */}
               <div className="text-left lg:-ml-42 animate-slide-up">
                 <div className="text-white text-1xl sm:text-3xl md:text-5xl mb-4 font-light tracking-wide">
                   Oh, Hi There!
@@ -177,7 +177,7 @@ export default function InteractiveGridHero() {
                 </div>
               </div>
 
-              {/* 🖼️ Photo Section */}
+              {/* 🖼️ Photo profile gueh bay ganteng dikit la wkwkw*/}
 
               <div className="relative lg:-mr-40 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <div
@@ -231,7 +231,7 @@ export default function InteractiveGridHero() {
         </div>
       </div>
 
-      {/* 🧱 Project Section */}
+      {/* 🧱 Project2 guah bay, maap masi dikit */}
       <div className="bg-black min-h-screen w-full py-20 px-8 md:px-12 mt-25 mb-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center">
@@ -242,7 +242,7 @@ export default function InteractiveGridHero() {
             </span>
           </div>
 
-          {/* 🌟 3 Columns Project Cards */}
+          {/* kite bikin 3 kolom */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 mt-20 md:mt-36 max-w-[90%] ml-9 sm:max-w-[85%] md:max-w-[100%] mx-auto md:ml-7">
             {/* Card 1 */}
             <Tilt
