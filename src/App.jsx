@@ -382,7 +382,7 @@ export default function InteractiveGridHero() {
         </div>
       </div>
 
-      {/* 💼 Experience Section - Responsive Version */}
+      {/* 💼 sedikit experience gueh bay, harus lebih banyak lagi nihhh */}
       <div className="bg-black w-full py-12 px-4 md:px-12 md:py-20">
         <div className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center mb-25 md:mb-40">
           <span className="text-white">several </span>
@@ -397,7 +397,7 @@ export default function InteractiveGridHero() {
           {/* Vertical Line */}
           <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"></div>
 
-          {/* Experience 1 - Mobile: Right of line, Desktop: Left Side */}
+          {/* Experience 1 */}
           <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
             <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
@@ -419,7 +419,7 @@ export default function InteractiveGridHero() {
             <div className="hidden md:block md:w-1/2"></div>
           </div>
 
-          {/* Experience 2 - Mobile: Right of line, Desktop: Right Side */}
+          {/* Experience 2 */}
           <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-end items-start md:items-center">
             <div className="w-full md:w-1/2 pl-20 md:pl-12 text-left md:order-2">
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
@@ -440,7 +440,7 @@ export default function InteractiveGridHero() {
             <div className="hidden md:block md:w-1/2 md:order-0"></div>
           </div>
 
-          {/* Experience 3 - Mobile: Right of line, Desktop: Left Side */}
+          {/* Experience 3 */}
           <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
             <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
@@ -461,7 +461,7 @@ export default function InteractiveGridHero() {
             <div className="hidden md:block md:w-1/2"></div>
           </div>
 
-          {/* Experience 4 - Mobile: Right of line, Desktop: Right Side */}
+          {/* Experience 4 */}
           <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-end items-start md:items-center">
             <div className="w-full md:w-1/2 pl-20 md:pl-12 text-left md:order-2">
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
@@ -482,7 +482,7 @@ export default function InteractiveGridHero() {
             <div className="hidden md:block md:w-1/2 md:order-0"></div>
           </div>
 
-          {/* Experience 5 - Mobile: Right of line, Desktop: Left Side */}
+          {/* Experience 5  */}
           <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
             <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
               <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
