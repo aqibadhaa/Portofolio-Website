@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { FaHandPaper } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
+import profileImg from './media/IMG_20240613_205222.jpg';
+import objectdetect from './media/object detection.jpg';
+import portoImg from './media/porto-web.png'
+import classificationImg from './media/Screenshot 2025-10-27 123147.png'
+import sentimentImg from './media/Screenshot 2025-10-31 134416.png'
+import gameqiiImg from './media/Untitled design.png'
+
+
+
 
 export default function InteractiveGridHero() {
   const [cells, setCells] = useState([]);
@@ -188,7 +197,7 @@ export default function InteractiveGridHero() {
                 <div className="relative w-[260px] h-[330px] sm:w-[290px] sm:h-[370px] lg:w-[350px] lg:h-[450px] bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl border border-neutral-700 shadow-2xl overflow-hidden">
                   <div className="w-full h-full">
                     <img
-                      src="/src/media/IMG_20240613_205222.jpg"
+                      src={profileImg}
                       alt="Profile"
                       className="w-full h-full object-cover scale-147"
                     />
@@ -258,7 +267,7 @@ export default function InteractiveGridHero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Gameqii-Gaming-Shop', '_blank')}>
                 <img
-                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                  src={gameqiiImg}
                   alt="Project 1"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -283,7 +292,7 @@ export default function InteractiveGridHero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Sentiment-Analyst-myIM3-Apps', '_blank')}>
                 <img
-                  src="/9f5946d6-d060-4aaa-b1c3-e64795227a1c.jpg"
+                  src={sentimentImg}
                   alt="Project 2"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -312,7 +321,7 @@ export default function InteractiveGridHero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Simple-Image-Classification-', '_blank')}>
                 <img
-                  src="/src/media/Screenshot 2025-10-27 123147.png"
+                  src={classificationImg}
                   alt="Project 3"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -341,7 +350,7 @@ export default function InteractiveGridHero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Yolov8-Webcam-Object-Detection', '_blank')}>
                 <img
-                  src="/src/media/object detection.jpg"
+                  src={objectdetect}
                   alt="Project 4"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -367,7 +376,7 @@ export default function InteractiveGridHero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Portofolio-Website', '_blank')}>
                 <img
-                  src="/src/media/porto-web.png"
+                  src={portoImg}
                   alt="Project 5"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
