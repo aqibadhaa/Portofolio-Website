@@ -188,7 +188,7 @@ export default function InteractiveGridHero() {
 
               {/* 🖼️ Photo profile gueh bay ganteng dikit la wkwkw*/}
 
-              <div className="relative lg:-mr-40 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="relative lg:-mr-40 animate-slide-up pointer-events-auto" style={{ animationDelay: '0.2s' }}>
                 <div
                   className="absolute inset-0 w-[270px] h-[340px] sm:w-[300px] sm:h-[380px] lg:w-[363px] lg:h-[463px] bg-gradient-to-br from-blue-600 to-blue-700 rounded-4xl"
                   style={{ transform: 'translate(2px, 2px)' }}
