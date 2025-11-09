@@ -190,11 +190,22 @@ export default function InteractiveGridHero() {
 
               <div className="relative lg:-mr-40 animate-slide-up pointer-events-auto" style={{ animationDelay: '0.2s' }}>
                 <div
-                  className="absolute inset-0 w-[270px] h-[340px] sm:w-[300px] sm:h-[380px] lg:w-[363px] lg:h-[463px] bg-gradient-to-br from-blue-600 to-blue-700 rounded-4xl"
-                  style={{ transform: 'translate(2px, 2px)' }}
-                ></div>
+                  className="absolute inset-0 w-[274px] h-[340px] sm:w-[299px] sm:h-[380px] lg:w-[365px] lg:h-[463px] rounded-4xl overflow-hidden"
+                  style={{
+                    transform: 'translate(2px, 5px)',
+                    background: 'linear-gradient(to bottom right, rgb(37, 99, 235), rgb(29, 78, 216))',
+                  }}
+                >
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: 'radial-gradient(circle, rgba(211, 245, 255, 0.8) 7px, transparent 0px)',
+                      backgroundSize: '28.5px 3px'
+                    }}
+                  ></div>
+                </div>
 
-                <div className="relative w-[260px] h-[330px] sm:w-[290px] sm:h-[370px] lg:w-[350px] lg:h-[450px] bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl border border-neutral-700 shadow-2xl overflow-hidden">
+                <div className="relative w-[261px] h-[330px] sm:w-[291px] sm:h-[370px] lg:w-[350px] lg:h-[450px] bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-3xl border border-neutral-700 shadow-2xl overflow-hidden">
                   <div className="w-full h-full">
                     <img
                       src={profileImg}
