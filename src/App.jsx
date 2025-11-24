@@ -124,6 +124,12 @@ export default function InteractiveGridHero() {
         .animate-slide-up {
           animation: slideUp 0.8s ease-out forwards;
         }
+
+        .scale-up {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
       `}</style>
 
       {/* sung ajah */}
@@ -252,7 +258,7 @@ export default function InteractiveGridHero() {
       </div>
 
       {/* 🧱 Project2 guah bay, maap masi dikit */}
-      <div className="bg-black min-h-screen w-full py-20 px-8 md:px-12 mt-25 mb-20">
+      <div className="bg-black min-h-screen w-full py-20 px-8 md:px-12 mt-25 mb-20" style={{ animation: 'fadeIn 0.8s ease-in' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center">
             <span className="text-white">some </span>
@@ -263,7 +269,7 @@ export default function InteractiveGridHero() {
           </div>
 
           {/* kite bikin 3 kolom */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 mt-20 md:mt-36 max-w-[90%] ml-9 sm:max-w-[85%] md:max-w-[100%] mx-auto md:ml-7">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-1 md:gap-12 mt-20 md:mt-45 max-w-[90%] ml-9 sm:max-w-[85%] md:max-w-[100%] mx-auto md:ml-8">
             {/* Card 1 */}
             <Tilt
               tiltMaxAngleX={-8}
@@ -283,8 +289,8 @@ export default function InteractiveGridHero() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-2xl mr-3">Gameqii Shop</h3>
-                  <span className="bg-black text-white text-xs sm:text-sm md:text-base font-semibold px-2 py-1 rounded text-center">React Native</span>
+                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Gameqii Shop</h3>
+                  <span className="bg-yellow-200/10 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded text-center">React Native</span>
                 </div>
               </div>
             </Tilt>
@@ -307,12 +313,12 @@ export default function InteractiveGridHero() {
                   alt="Project 2"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-[#d9d699] p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-2xl mr-3">
+                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
+                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
                     Sentiment Analysis : myIM3 Apps
                   </h3>
-                  <span className="bg-black text-white text-xs sm:text-sm md:text-base font-semibold px-2 py-1 rounded text-center">
-                    Machine learning
+                  <span className="bg-yellow-500/20 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">
+                    Machine Learning
                   </span>
                 </div>
               </div>
@@ -336,12 +342,12 @@ export default function InteractiveGridHero() {
                   alt="Project 3"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-[#d9d699] p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-2xl mr-3">
+                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
+                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
                     Image Classification
                   </h3>
-                  <span className="bg-black text-white text-xs sm:text-sm md:text-base font-semibold px-2 py-1 rounded text-center">
-                    Machine learning
+                  <span className="bg-yellow-100/30 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">
+                    Machine Learning
                   </span>
                 </div>
               </div>
@@ -365,9 +371,9 @@ export default function InteractiveGridHero() {
                   alt="Project 4"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-[#d9d699] p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-2xl mr-3">Simple Real-time Object Detection</h3>
-                  <span className="bg-black text-white text-xs sm:text-sm md:text-base font-semibold px-2 py-1 rounded text-center">Machine Learning
+                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
+                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Simple Real-time Object Detection</h3>
+                  <span className="bg-yellow-100/50 backdrop-blur-3xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">Machine Learning
                   </span>
                 </div>
               </div>
@@ -392,8 +398,8 @@ export default function InteractiveGridHero() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-2xl mr-3">Portofolio Website</h3>
-                  <span className="bg-black text-white text-xs sm:text-sm md:text-base font-semibold px-2 py-1 rounded text-center">React
+                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Portofolio Website</h3>
+                  <span className="bg-yellow-100/50 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded-xl text-center">React
                   </span>
                 </div>
               </div>
