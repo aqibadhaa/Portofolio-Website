@@ -316,7 +316,7 @@ export default function InteractiveGridHero() {
               <AnimateOnScroll
                 key={index}
                 animation="slide-up"
-                delay={200 + (index * 120)}
+                delay={80 + (index * 30)}
               >
                 <Tilt
                   tiltMaxAngleX={-8}
@@ -369,12 +369,12 @@ export default function InteractiveGridHero() {
 
         {/* Timeline */}
         <div className="max-w-5xl mx-auto relative">
-          {/* Vertical Line - pakai inline style biar gak ilang */}
+          {/* Vertical Line - lebih cepet muncul */}
           <div
             className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"
             style={{
-              animation: 'fadeIn 0.8s ease-in',
-              animationDelay: '300ms',
+              animation: 'fadeIn 0.6s ease-in',
+              animationDelay: '200ms',
               opacity: 0,
               animationFillMode: 'forwards'
             }}
@@ -421,7 +421,7 @@ export default function InteractiveGridHero() {
             <AnimateOnScroll
               key={index}
               animation={exp.position === "left" ? "slide-right" : "slide-left"}
-              delay={500 + (index * 150)}
+              delay={200 + (index * 50)}
             >
               <div className={`relative mb-12 md:mb-16 flex flex-col md:flex-row ${exp.position === "right" ? 'md:justify-end' : 'md:justify-start'} items-start md:items-center`}>
                 <div className={`w-full md:w-1/2 pl-20 md:pl-${exp.position === "right" ? '12' : '0'} ${exp.position === "right" ? 'md:pr-0' : 'md:pr-12'} text-left ${exp.position === "right" ? 'md:order-2' : ''}`}>
