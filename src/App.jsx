@@ -7,6 +7,7 @@ import portoImg from './media/porto-web.png'
 import classificationImg from './media/Screenshot 2025-10-27 123147.png'
 import sentimentImg from './media/Screenshot 2025-10-31 134416.png'
 import gameqiiImg from './media/Untitled design.png'
+import { AnimateOnScroll } from './AnimateOnScroll';
 
 
 
@@ -192,6 +193,8 @@ export default function InteractiveGridHero() {
                 </div>
               </div>
 
+              <></>
+
               {/* 🖼️ Photo profile gueh bay ganteng dikit la wkwkw*/}
 
               <div className="relative lg:-mr-40 animate-slide-up pointer-events-auto" style={{ animationDelay: '0.2s' }}>
@@ -260,274 +263,198 @@ export default function InteractiveGridHero() {
       {/* 🧱 Project2 guah bay, maap masi dikit */}
       <div className="bg-black min-h-screen w-full py-20 px-8 md:px-12 mt-25 mb-20" style={{ animation: 'fadeIn 0.8s ease-in' }}>
         <div className="max-w-7xl mx-auto">
-          <div className="text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center">
-            <span className="text-white">some </span>
-            <span className="bg-gradient-to-r from-[#d9d686] via-[#d9d670] to-[#d9d699] bg-clip-text text-transparent">
-              Project
-              <span className="text-blue-400 bg-clip-text">.</span>
-            </span>
-          </div>
+          {/* Judul - muncul duluan */}
+          <AnimateOnScroll animation="slide-up" delay={0}>
+            <div className="text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center">
+              <span className="text-white">some </span>
+              <span className="bg-gradient-to-r from-[#d9d686] via-[#d9d670] to-[#d9d699] bg-clip-text text-transparent">
+                Project
+                <span className="text-blue-400 bg-clip-text">.</span>
+              </span>
+            </div>
+          </AnimateOnScroll>
 
           {/* kite bikin 3 kolom */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-1 md:gap-12 mt-20 md:mt-45 max-w-[90%] ml-9 sm:max-w-[85%] md:max-w-[100%] mx-auto md:ml-8">
-            {/* Card 1 */}
-            <Tilt
-              tiltMaxAngleX={-8}
-              tiltMaxAngleY={-8}
-              scale={1.05}
-              transitionSpeed={2000}
-              glareEnable={false}
-              glareMaxOpacity={0.2}
-              glareColor="#d9d686"
-              glarePosition="all"
-              glareBorderRadius="10px"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Gameqii-Gaming-Shop', '_blank')}>
-                <img
-                  src={gameqiiImg}
-                  alt="Project 1"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Gameqii Shop</h3>
-                  <span className="bg-yellow-200/10 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded text-center">React Native</span>
-                </div>
-              </div>
-            </Tilt>
-
-            {/* Card 2 */}
-            <Tilt
-              tiltMaxAngleX={-8}
-              tiltMaxAngleY={-8}
-              scale={1.05}
-              transitionSpeed={2000}
-              glareEnable={false}
-              glareMaxOpacity={0.2}
-              glareColor="#d9d686"
-              glarePosition="all"
-              glareBorderRadius="16px"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Sentiment-Analyst-myIM3-Apps', '_blank')}>
-                <img
-                  src={sentimentImg}
-                  alt="Project 2"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
-                    Sentiment Analysis : myIM3 Apps
-                  </h3>
-                  <span className="bg-yellow-500/20 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">
-                    Machine Learning
-                  </span>
-                </div>
-              </div>
-            </Tilt>
-
-            {/* Card 3 */}
-            <Tilt
-              tiltMaxAngleX={-8}
-              tiltMaxAngleY={-8}
-              scale={1.05}
-              transitionSpeed={2000}
-              glareEnable={false}
-              glareMaxOpacity={0.2}
-              glareColor="#d9d686"
-              glarePosition="all"
-              glareBorderRadius="10px"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Simple-Image-Classification-', '_blank')}>
-                <img
-                  src={classificationImg}
-                  alt="Project 3"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
-                    Image Classification
-                  </h3>
-                  <span className="bg-yellow-100/30 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">
-                    Machine Learning
-                  </span>
-                </div>
-              </div>
-            </Tilt>
-
-            {/* Card 4 */}
-            <Tilt
-              tiltMaxAngleX={-8}
-              tiltMaxAngleY={-8}
-              scale={1.05}
-              transitionSpeed={2000}
-              glareEnable={false}
-              glareMaxOpacity={0.2}
-              glareColor="#d9d686"
-              glarePosition="all"
-              glareBorderRadius="10px"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Yolov8-Webcam-Object-Detection', '_blank')}>
-                <img
-                  src={objectdetect}
-                  alt="Project 4"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Simple Real-time Object Detection</h3>
-                  <span className="bg-yellow-100/50 backdrop-blur-3xl text-gray-800 text-xs sm:text-sm md:text-base/5 font-normal px-2 py-1 rounded-xl text-center">Machine Learning
-                  </span>
-                </div>
-              </div>
-            </Tilt>
-
-            {/* Card 5 */}
-            <Tilt
-              tiltMaxAngleX={-8}
-              tiltMaxAngleY={-8}
-              scale={1.05}
-              transitionSpeed={2000}
-              glareEnable={false}
-              glareMaxOpacity={0.2}
-              glareColor="#d9d686"
-              glarePosition="all"
-              glareBorderRadius="16px"
-            >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]" onClick={() => window.open('https://github.com/aqibadhaa/Portofolio-Website', '_blank')}>
-                <img
-                  src={portoImg}
-                  alt="Project 5"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-transparent p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                  <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">Portofolio Website</h3>
-                  <span className="bg-yellow-100/50 backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded-xl text-center">React
-                  </span>
-                </div>
-              </div>
-            </Tilt>
+            {[
+              {
+                img: gameqiiImg,
+                title: "Gameqii Shop",
+                tech: "React Native",
+                url: "https://github.com/aqibadhaa/Gameqii-Gaming-Shop",
+                bgColor: "bg-yellow-100/30"
+              },
+              {
+                img: sentimentImg,
+                title: "Sentiment Analysis : myIM3 Apps",
+                tech: "Machine Learning",
+                url: "https://github.com/aqibadhaa/Sentiment-Analyst-myIM3-Apps",
+                bgColor: "bg-yellow-100/30"
+              },
+              {
+                img: classificationImg,
+                title: "Image Classification",
+                tech: "Machine Learning",
+                url: "https://github.com/aqibadhaa/Simple-Image-Classification-",
+                bgColor: "bg-yellow-100/30"
+              },
+              {
+                img: objectdetect,
+                title: "Simple Real-time Object Detection",
+                tech: "Machine Learning",
+                url: "https://github.com/aqibadhaa/Yolov8-Webcam-Object-Detection",
+                bgColor: "bg-yellow-100/30"
+              },
+              {
+                img: portoImg,
+                title: "Portofolio Website",
+                tech: "React",
+                url: "https://github.com/aqibadhaa/Portofolio-Website",
+                bgColor: "bg-yellow-100/30"
+              }
+            ].map((project, index) => (
+              <AnimateOnScroll
+                key={index}
+                animation="slide-up"
+                delay={200 + (index * 120)}
+              >
+                <Tilt
+                  tiltMaxAngleX={-8}
+                  tiltMaxAngleY={-8}
+                  scale={1.05}
+                  transitionSpeed={2000}
+                  glareEnable={false}
+                  glareMaxOpacity={0.2}
+                  glareColor="#d9d686"
+                  glarePosition="all"
+                  glareBorderRadius="16px"
+                >
+                  <div
+                    className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]"
+                    onClick={() => window.open(project.url, '_blank')}
+                  >
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-[#aaa765] p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
+                      <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
+                        {project.title}
+                      </h3>
+                      <span className={`${project.bgColor} backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded-xl text-center`}>
+                        {project.tech}
+                      </span>
+                    </div>
+                  </div>
+                </Tilt>
+              </AnimateOnScroll>
+            ))}
           </div>
         </div>
       </div>
 
       {/* 💼 sedikit experience gueh bay, harus lebih banyak lagi nihhh */}
       <div className="bg-black w-full py-12 px-4 md:px-12 md:py-20">
-        <div className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center mb-25 md:mb-40">
-          <span className="text-white">several </span>
-          <span className="bg-gradient-to-r from-[#d9d686] via-[#d9d670] to-[#d9d699] bg-clip-text text-transparent">
-            Experience & Journey
-            <span className="text-blue-400">.</span>
-          </span>
-        </div>
+        {/* Judul - muncul duluan */}
+        <AnimateOnScroll animation="slide-up" delay={0}>
+          <div className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center mb-25 md:mb-40">
+            <span className="text-white">several </span>
+            <span className="bg-gradient-to-r from-[#d9d686] via-[#d9d670] to-[#d9d699] bg-clip-text text-transparent">
+              Experience & Journey
+              <span className="text-blue-400">.</span>
+            </span>
+          </div>
+        </AnimateOnScroll>
 
         {/* Timeline */}
         <div className="max-w-5xl mx-auto relative">
-          {/* Vertical Line */}
-          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"></div>
+          {/* Vertical Line - pakai inline style biar gak ilang */}
+          <div
+            className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"
+            style={{
+              animation: 'fadeIn 0.8s ease-in',
+              animationDelay: '300ms',
+              opacity: 0,
+              animationFillMode: 'forwards'
+            }}
+          ></div>
 
-          {/* Experience 1 */}
-          <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
-            <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
-                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">Machine Learning Bootcamp & Cohort team</h3>
-                <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">Dicoding</h4>
-                <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
-                  Participated in a 5-month intensive bootcamp program specializing in Machine Learning and Deep Learning, while also developing essential soft skills through hands-on projects, submissions, and a final capstone project.
-                </p>
-                <p className="text-sm md:text-base text-gray-500 font-medium">July 2025 - November 2025</p>
-              </div>
-            </div>
-            {/* Icon */}
-            <div className="absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
-                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-              </svg>
-            </div>
-            <div className="hidden md:block md:w-1/2"></div>
-          </div>
+          {/* Experience Items */}
+          {[
+            {
+              title: "Machine Learning Bootcamp & Cohort team",
+              company: "Dicoding",
+              description: "Participated in a 5-month intensive bootcamp program specializing in Machine Learning and Deep Learning, while also developing essential soft skills through hands-on projects, submissions, and a final capstone project.",
+              period: "July 2025 - November 2025",
+              position: "left"
+            },
+            {
+              title: "Robotics Extracurricular Co-Lead",
+              company: "Man 7 Jakarta",
+              description: "Experienced as co-leader of robotics extracurricular activities at Man 7 Jakarta and also participated in several competitions",
+              period: "2024 - 2025",
+              position: "right"
+            },
+            {
+              title: "Asean Robotic Day Participant",
+              company: "Sman 38 Jakarta",
+              description: "Took part in the ASEAN Robotic Day, an multinational robotics competition, competing in the ASV (Autonomous Surface Vehicle) category.",
+              period: "2023",
+              position: "left"
+            },
+            {
+              title: "Silver Medals at Jakarta Robotik Games 2022",
+              company: "Mts PKP Jakarta Islamic School",
+              description: "became the 2nd place winner in JRG 2022 Robotics in the \"Creative Senior\" Category",
+              period: "2022",
+              position: "right"
+            },
+            {
+              title: "Silver Medals at Jakarta Madrasah Competition 2022",
+              company: "Kemenag",
+              description: "became the 2nd place winner in JMC 2022 Robotics in the Creative Robot Category",
+              period: "2022",
+              position: "left"
+            }
+          ].map((exp, index) => (
+            <AnimateOnScroll
+              key={index}
+              animation={exp.position === "left" ? "slide-right" : "slide-left"}
+              delay={500 + (index * 150)}
+            >
+              <div className={`relative mb-12 md:mb-16 flex flex-col md:flex-row ${exp.position === "right" ? 'md:justify-end' : 'md:justify-start'} items-start md:items-center`}>
+                <div className={`w-full md:w-1/2 pl-20 md:pl-${exp.position === "right" ? '12' : '0'} ${exp.position === "right" ? 'md:pr-0' : 'md:pr-12'} text-left ${exp.position === "right" ? 'md:order-2' : ''}`}>
+                  <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
+                    <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">{exp.title}</h3>
+                    <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">{exp.company}</h4>
+                    <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
+                      {exp.description}
+                    </p>
+                    <p className="text-sm md:text-base text-gray-500 font-medium">{exp.period}</p>
+                  </div>
+                </div>
 
-          {/* Experience 2 */}
-          <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-end items-start md:items-center">
-            <div className="w-full md:w-1/2 pl-20 md:pl-12 text-left md:order-2">
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
-                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">Robotics Extracurricular Co-Lead</h3>
-                <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">Man 7 Jakarta</h4>
-                <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
-                  Experienced as co-leader of robotics extracurricular activities at Man 7 Jakarta and also participated in several competitions
-                </p>
-                <p className="text-sm md:text-base text-gray-500 font-medium">2024 - 2025</p>
-              </div>
-            </div>
-            {/* Icon */}
-            <div className="absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10 md:order-1">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-              </svg>
-            </div>
-            <div className="hidden md:block md:w-1/2 md:order-0"></div>
-          </div>
+                {/* Icon */}
+                <div className={`absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10 ${exp.position === "right" ? 'md:order-1' : ''}`}>
+                  <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                    {index === 0 ? (
+                      // Briefcase icon for first item
+                      <>
+                        <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
+                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                      </>
+                    ) : (
+                      // Education icon for others
+                      <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                    )}
+                  </svg>
+                </div>
 
-          {/* Experience 3 */}
-          <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
-            <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
-                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">Asean Robotic Day Participant</h3>
-                <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">Sman 38 Jakarta</h4>
-                <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
-                  Took part in the ASEAN Robotic Day, an multinational robotics competition, competing in the ASV (Autonomous Surface Vehicle) category.
-                </p>
-                <p className="text-sm md:text-base text-gray-500 font-medium">2023</p>
+                <div className={`hidden md:block md:w-1/2 ${exp.position === "right" ? 'md:order-0' : ''}`}></div>
               </div>
-            </div>
-            {/* Icon */}
-            <div className="absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-              </svg>
-            </div>
-            <div className="hidden md:block md:w-1/2"></div>
-          </div>
-
-          {/* Experience 4 */}
-          <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-end items-start md:items-center">
-            <div className="w-full md:w-1/2 pl-20 md:pl-12 text-left md:order-2">
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
-                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">Silver Medals at Jakarta Robotik Games 2022</h3>
-                <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">Mts PKP Jakarta Islamic School</h4>
-                <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
-                  became the 2nd place winner in JRG 2022 Robotics in the "Creative Senior" Category
-                </p>
-                <p className="text-sm md:text-base text-gray-500 font-medium">2022</p>
-              </div>
-            </div>
-            {/* Icon */}
-            <div className="absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10 md:order-1">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-              </svg>
-            </div>
-            <div className="hidden md:block md:w-1/2 md:order-0"></div>
-          </div>
-
-          {/* Experience 5  */}
-          <div className="relative mb-12 md:mb-16 flex flex-col md:flex-row md:justify-start items-start md:items-center">
-            <div className="w-full md:w-1/2 pl-20 md:pl-0 md:pr-12 text-left">
-              <div className="bg-white rounded-2xl p-5 md:p-6 shadow-xl border-2 border-blue-400">
-                <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2">Silver Medals at Jakarta Madrasah Competition 2022</h3>
-                <h4 className="text-base md:text-xl font-semibold text-gray-700 mb-3">Kemenag</h4>
-                <p className="text-sm md:text-base text-gray-600 text-justify mb-3">
-                  became the 2nd place winner in JMC 2022 Robotics in the Creative Robot Category
-                </p>
-                <p className="text-sm md:text-base text-gray-500 font-medium">2022</p>
-              </div>
-            </div>
-            {/* Icon */}
-            <div className="absolute left-4 md:left-1/2 top-0 transform md:-translate-x-1/2 w-12 h-12 md:w-16 md:h-16 bg-[#d9d686] rounded-full flex items-center justify-center shadow-lg z-10">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-              </svg>
-            </div>
-            <div className="hidden md:block md:w-1/2"></div>
-          </div>
+            </AnimateOnScroll>
+          ))}
         </div>
       </div>
     </div>
