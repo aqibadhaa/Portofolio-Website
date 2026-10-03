@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaHandPaper } from 'react-icons/fa';
-import Tilt from 'react-parallax-tilt';
 import profileImg from './media/IMG_20240613_205222.jpg';
-import objectdetect from './media/object detection.jpg';
-import portoImg from './media/porto-web.png'
-import classificationImg from './media/Screenshot 2025-10-27 123147.png'
-import sentimentImg from './media/Screenshot 2025-10-31 134416.png'
-import gameqiiImg from './media/Untitled design.png'
 import { AnimateOnScroll } from './AnimateOnScroll';
+import { ProjectsSection } from './components/Projects/ProjectsSection';
 
 
 
@@ -260,99 +255,8 @@ export default function InteractiveGridHero() {
         </div>
       </div>
 
-      {/* 🧱 Project2 guah bay, maap masi dikit */}
-      <div className="bg-black min-h-screen w-full py-20 px-8 md:px-12 mt-25 mb-20" style={{ animation: 'fadeIn 0.8s ease-in' }}>
-        <div className="max-w-7xl mx-auto">
-          {/* Judul - muncul duluan */}
-          <AnimateOnScroll animation="slide-up" delay={0}>
-            <div className="text-4xl md:text-5xl font-bold tracking-tight mb-16 text-center">
-              <span className="text-white">some </span>
-              <span className="bg-gradient-to-r from-[#d9d686] via-[#d9d670] to-[#d9d699] bg-clip-text text-transparent">
-                Project
-                <span className="text-blue-400 bg-clip-text">.</span>
-              </span>
-            </div>
-          </AnimateOnScroll>
-
-          {/* kite bikin 3 kolom */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-1 md:gap-12 mt-20 md:mt-45 max-w-[90%] ml-9 sm:max-w-[85%] md:max-w-[100%] mx-auto md:ml-8">
-            {[
-              {
-                img: gameqiiImg,
-                title: "Gameqii Shop",
-                tech: "React Native",
-                url: "https://github.com/aqibadhaa/Gameqii-Gaming-Shop",
-                bgColor: "bg-yellow-100/30"
-              },
-              {
-                img: sentimentImg,
-                title: "Sentiment Analysis : myIM3 Apps",
-                tech: "Machine Learning",
-                url: "https://github.com/aqibadhaa/Sentiment-Analyst-myIM3-Apps",
-                bgColor: "bg-yellow-100/30"
-              },
-              {
-                img: classificationImg,
-                title: "Image Classification",
-                tech: "Machine Learning",
-                url: "https://github.com/aqibadhaa/Simple-Image-Classification-",
-                bgColor: "bg-yellow-100/30"
-              },
-              {
-                img: objectdetect,
-                title: "Simple Real-time Object Detection",
-                tech: "Machine Learning",
-                url: "https://github.com/aqibadhaa/Yolov8-Webcam-Object-Detection",
-                bgColor: "bg-yellow-100/30"
-              },
-              {
-                img: portoImg,
-                title: "Portofolio Website",
-                tech: "React",
-                url: "https://github.com/aqibadhaa/Portofolio-Website",
-                bgColor: "bg-yellow-100/30"
-              }
-            ].map((project, index) => (
-              <AnimateOnScroll
-                key={index}
-                animation="slide-up"
-                delay={80 + (index * 30)}
-              >
-                <Tilt
-                  tiltMaxAngleX={-8}
-                  tiltMaxAngleY={-8}
-                  scale={1.05}
-                  transitionSpeed={2000}
-                  glareEnable={false}
-                  glareMaxOpacity={0.2}
-                  glareColor="#d9d686"
-                  glarePosition="all"
-                  glareBorderRadius="16px"
-                >
-                  <div
-                    className="relative overflow-hidden rounded-2xl shadow-lg group h-[220px] w-[90%] sm:h-[280px] md:h-[320px]"
-                    onClick={() => window.open(project.url, '_blank')}
-                  >
-                    <img
-                      src={project.img}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute bottom-0 w-full bg-gradient-to-r from-[#d9d886] via-[#d9d670] to-[#aaa765] p-4 flex justify-between items-center transition-all duration-900 group-hover:translate-y-4/5">
-                      <h3 className="text-gray-900 font-semibold text-lg sm:text-xl md:text-xl mr-3">
-                        {project.title}
-                      </h3>
-                      <span className={`${project.bgColor} backdrop-blur-2xl text-gray-800 text-xs sm:text-sm md:text-base font-normal px-2 py-1 rounded-xl text-center`}>
-                        {project.tech}
-                      </span>
-                    </div>
-                  </div>
-                </Tilt>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* 🧱 Projects Section */}
+      <ProjectsSection />
 
       {/* 💼 sedikit experience gueh bay, harus lebih banyak lagi nihhh */}
       <div className="bg-black w-full py-12 px-4 md:px-12 md:py-20">
