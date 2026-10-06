@@ -287,6 +287,20 @@ export default function InteractiveGridHero() {
           {/* Experience Items */}
           {[
             {
+              title: "Assistant of MK Praktikum Unggulan (Praktikum DGX) Universitas Gunadarma",
+              company: "Universitas Gunadarma",
+              description: "Guide students through the DGX Practicum course by explaining the material and supporting hands-on activities, Support students with technical issues and course questions, and pass bigger problems to supervisors, and Join internal and external competitions with the Competition Division, and coordinate with other lab divisions",
+              period: "September 2026 - Present",
+              position: "left"
+            },
+            {
+              title: "3rd Place Winner - CompeteMate & CompeteFest GDGoC 2026",
+              company: "Google Developer Group on Campus Universitas Gunadarma",
+              description: "Developed GulaWise, a digital health platform predicting diabetes risk using Machine Learning and AI Assistant features.",
+              period: "April 2026",
+              position: "right"
+            },
+            {
               title: "Machine Learning Bootcamp & Cohort team",
               company: "Dicoding",
               description: "Participated in a 5-month intensive bootcamp program specializing in Machine Learning and Deep Learning, while also developing essential soft skills through hands-on projects, submissions, and a final capstone project.",
