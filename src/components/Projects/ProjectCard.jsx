@@ -18,7 +18,11 @@ export const ProjectCard = ({ project, index }) => {
   const animationDelay = 80 + index * 30;
 
   const handleCardClick = () => {
-    window.open(project.url, '_blank', 'noopener,noreferrer');
+    if (project.url.startsWith("#")) {
+      window.location.href = project.url;
+    } else {
+      window.open(project.url, '_blank', 'noopener,noreferrer');
+    }
   };
 
   return (

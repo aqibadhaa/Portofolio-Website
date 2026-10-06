@@ -78,7 +78,7 @@ export const PROJECTS_DATA = [
     id: 'portfolio-website',
     title: 'Portofolio Website',
     tech: 'React',
-    url: '#',
+    url: '#home',
     img: portoImg,
     bgColor: 'bg-yellow-100/30'
   }
