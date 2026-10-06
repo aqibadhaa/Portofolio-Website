@@ -18,8 +18,8 @@ export default function InteractiveGridHero() {
 
   const roles = [
     'Junior Fullstack Developer',
-    'entry level React Native Developer',
-    'Deep Learning & Machine Learning Engineer'
+    'Entry level Mobile Developer',
+    'Machine Learning, Deep Learning & Automation Enthusiast'
   ];
 
   // Grid kotak-kotak setup bayy
